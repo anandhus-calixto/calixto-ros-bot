@@ -3,41 +3,37 @@
 
     <xacro:include filename="inertial_macros.xacro" />
 
-    <material name="white">  <color rgba="1 1 1 1"/>     </material>
+    <material name="white">  <color rgba="1 1 1 1"/>      </material>
     <material name="blue">   <color rgba="0.2 0.2 1 1"/> </material>
-    <material name="black">  <color rgba="0 0 0 1"/>     </material>
+    <material name="black">  <color rgba="0 0 0 1"/>      </material>
+    <material name="red">    <color rgba="1 0 0 1"/>      </material>
+    <material name="green">  <color rgba="0 1 0 1"/>      </material>
+    <material name="yellow"> <color rgba="1 1 0 1"/>      </material>
+    <material name="orange"> <color rgba="1 0.5 0 1"/>   </material>
+    <material name="grey">   <color rgba="0.5 0.5 0.5 1"/></material>
+    <material name="light_blue"> <color rgba="0.6 0.8 1.0 1.0"/> </material>
+    <material name="light_grey"><color rgba="0.7 0.7 0.7 1.0"/></material>
 
-    <!-- BASE LINK sits at ground level Z=0 -->
+
     <link name="base_link"/>
 
-    <!-- ═══════════════════════════════════════
-         CHASSIS
-         l 300 b 250 h 110
-         chassis_joint Z = 0  (base_link at ground)
-         collision Z = wheel_radius + half_height
-                     = 0.04 + 0.06 = 0.10
-         Bottom of box = 0.10 - 0.06 = 0.04  (axle plane)
-         Top of box    = 0.10 + 0.06 = 0.16
-    ═══════════════════════════════════════ -->
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
         <origin xyz="0 0 0.087" rpy="0 0 0"/>
     </joint>
 
-    <link name="chassis">
+<link name="chassis">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chassis-URDF.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-top-and-bottom-red.stl" scale="0.001 0.001 0.001"/>
             </geometry>
-            <material name="blue"/>
+            <material name="red"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
-            <geometry>
-                <box size="0.3 0.25 0.11"/>
-            </geometry>
+            <geometry><box size="0.3 0.25 0.11"/></geometry>
         </collision>
         <xacro:inertial_box mass="0.5" x="0.3" y="0.25" z="0.11">
             <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -45,14 +41,90 @@
     </link>
 
     <gazebo reference="chassis">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <joint name="battery_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="battery_holder"/>
+        <origin xyz="0 0 0"/>
+    </joint>
+    <link name="battery_holder">
+        <visual>
+            <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-battery-holder-yellow.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="orange"/>
+        </visual>
+    </link>
+    <gazebo reference="battery_holder">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <joint name="comp_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="comp_parts"/>
+        <origin xyz="0 0 0"/>
+    </joint>
+    <link name="comp_parts">
+        <visual>
+            <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-comp-holder-darkblue.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <visual>
+            <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-stem-blue.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="light_blue"/>
+        </visual>
+    </link>
+    <gazebo reference="comp_parts">
         <material>Gazebo/Blue</material>
     </gazebo>
+
+    <joint name="acc_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="chassis_acc"/>
+        <origin xyz="0 0 0"/>
+    </joint>
+    <link name="chassis_acc">
+        <visual> <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-led-holder-black.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <visual> <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-motors-grey.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="light_grey"/>
+        </visual>
+    </link>
+    <gazebo reference="chassis_acc">
+        <material>Gazebo/Grey</material>
+    </gazebo>
     
-<!-- ═══════════════════════════════════════
-FL Wheel 4cm rad 4cm length
+    <joint name="switch_holder_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="switch_holder"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
 
-    ═══════════════════════════════════════ -->
+    <link name="switch_holder">
+        <visual>
+            <geometry>
+                <mesh filename="package://calixto-ros-bot/description/meshes/ROS2-Chasis-switch-holder.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+    </link>
 
+    <gazebo reference="switch_holder">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    
 <joint name="front_left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="front_left_wheel"/>
@@ -80,11 +152,6 @@ FL Wheel 4cm rad 4cm length
 <gazebo reference="front_left_wheel">
     <material>Gazebo/Black</material>
 </gazebo>
-
-<!-- ═══════════════════════════════════════
-RL Wheel 4cm rad 4cm length
-
-    ═══════════════════════════════════════ -->
 
 <joint name="rear_left_wheel_joint" type="continuous">
     <parent link="base_link"/>
@@ -114,11 +181,6 @@ RL Wheel 4cm rad 4cm length
     <material>Gazebo/Black</material>
 </gazebo>
 
-<!-- ═══════════════════════════════════════
-FR Wheel 4cm rad 4cm length
-
-    ═══════════════════════════════════════ -->
-
 <joint name="front_right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="front_right_wheel"/>
@@ -146,11 +208,6 @@ FR Wheel 4cm rad 4cm length
 <gazebo reference="front_right_wheel">
     <material>Gazebo/Black</material>
 </gazebo>
-
-<!-- ═══════════════════════════════════════
-RR Wheel 4cm rad 4cm length
-
-    ═══════════════════════════════════════ -->
 
 <joint name="rear_right_wheel_joint" type="continuous">
     <parent link="base_link"/>
