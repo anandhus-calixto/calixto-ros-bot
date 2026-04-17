@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    package_name='my_bot'
+    package_name='calixto-ros-bot'
 
     # 1. Path to your bridge config file
     bridge_config_file = os.path.join(
@@ -45,7 +45,7 @@ def generate_launch_description():
     # Spawn Entity
     spawn_entity = Node(package='ros_gz_sim', executable='create',
                         arguments=['-topic', 'robot_description',
-                                   '-name', 'my_bot'
+                                   '-name', 'calixto-ros-bot'
                                    ,'-z', '0.01'],
                         output='screen')
 

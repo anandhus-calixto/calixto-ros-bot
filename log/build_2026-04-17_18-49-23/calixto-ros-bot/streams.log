@@ -1,0 +1,114 @@
+[0.020s] Invoking command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot
+[0.118s] -- The C compiler identification is GNU 11.4.0
+[0.272s] -- The CXX compiler identification is GNU 11.4.0
+[0.294s] -- Detecting C compiler ABI info
+[0.439s] -- Detecting C compiler ABI info - done
+[0.488s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.490s] -- Detecting C compile features
+[0.491s] -- Detecting C compile features - done
+[0.520s] -- Detecting CXX compiler ABI info
+[0.733s] -- Detecting CXX compiler ABI info - done
+[0.817s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.820s] -- Detecting CXX compile features
+[0.821s] -- Detecting CXX compile features - done
+[0.839s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.120s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.254s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.316s] -- Found hardware_interface: 2.53.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.411s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.427s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.452s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.496s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.542s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.179s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.185s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.253s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.352s] -- Found OpenSSL: /usr/local/lib/libcrypto.so (found version "1.1.1o")
+[2.362s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.409s] -- Found FastRTPS: /opt/ros/humble/include
+[2.419s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.437s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.462s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.480s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.601s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.604s] -- Found Threads: TRUE
+[2.922s] -- Configuring done (2.9s)
+[2.955s] -- Generating done (0.0s)
+[2.960s] -- Build files have been written to: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot
+[2.980s] Invoked command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot
+[2.984s] Invoking command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake --build /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot -- -j4 -l4
+[3.044s] [ 50%] [32mBuilding CXX object CMakeFiles/calixto_hardware.dir/hardware/diffbot_system.cpp.o[0m
+[4.877s] In file included from [01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:1[m[K:
+[4.877s] [01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/include/calixto-ros-bot/diffbot_system.hpp:42:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[4.877s]    42 |   RCLCPP_SHARED_PTR_DEFINITIONS(DiffBotSystemHardware)[01;35m[K;[m[K
+[4.878s]       |                                                       [01;35m[K^[m[K
+[4.878s]       |                                                       [31m[K-[m[K
+[7.671s] [01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type calixto_ros_bot::DiffBotSystemHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[7.671s] [01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:140:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.671s]   140 | nst rclcpp::Time & /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[7.671s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[7.672s] 
+[9.950s] [100%] [1m[32mLinking CXX shared library libcalixto_hardware.so[0m
+[10.281s] [100%] Built target calixto_hardware
+[10.292s] Invoked command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake --build /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot -- -j4 -l4
+[10.302s] Invoking command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake --install /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot
+[10.308s] -- Install configuration: ""
+[10.309s] -- Execute custom install script
+[10.309s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot//calixto-ros-bot.xml
+[10.316s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/lib/calixto-ros-bot/libcalixto_hardware.so
+[10.324s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/bridge_config.yaml
+[10.330s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/diffbot_controllers.yaml
+[10.337s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/empty.yaml
+[10.345s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/build/.built_by
+[10.352s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/build/COLCON_IGNORE
+[10.358s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/diffbot.ros2_control.xacro
+[10.365s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/gazebo_control.xacro
+[10.372s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/inertial_macros.xacro
+[10.379s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/.colcon_install_layout
+[10.386s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/COLCON_IGNORE
+[10.393s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/_local_setup_util_ps1.py
+[10.399s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/_local_setup_util_sh.py
+[10.406s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.bash
+[10.413s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.ps1
+[10.419s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.sh
+[10.426s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.zsh
+[10.433s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.bash
+[10.440s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.ps1
+[10.446s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.sh
+[10.453s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.zsh
+[10.460s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-battery-holder-yellow.stl
+[10.467s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-comp-holder-darkblue.stl
+[10.475s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-led-holder-black.stl
+[10.482s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-motors-grey.stl
+[10.489s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-stem-blue.stl
+[10.495s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-switch-holder.stl
+[10.502s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-top-and-bottom-red.stl
+[10.509s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chassis-URDF.stl
+[10.515s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-LEFT-URDF.stl
+[10.522s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-RIGHT-URDF.stl
+[10.530s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/robot.urdf.xacro
+[10.536s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/robot_core.xacro
+[10.543s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/rviz/diffbot.rviz
+[10.550s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/rviz/diffbot_view.rviz
+[10.557s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/diffbot.launch.py
+[10.563s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/launch_sim.launch.py
+[10.570s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/rsp.launch.py
+[10.578s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/worlds/empty.world
+[10.584s] -- Up-to-date symlink: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/calixto-ros-bot.xml
+[10.585s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/package_run_dependencies/calixto-ros-bot
+[10.592s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/parent_prefix_path/calixto-ros-bot
+[10.599s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/ament_prefix_path.sh
+[10.608s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/ament_prefix_path.dsv
+[10.615s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/path.sh
+[10.621s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/path.dsv
+[10.629s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.bash
+[10.635s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.sh
+[10.643s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.zsh
+[10.650s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.dsv
+[10.657s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/package.dsv
+[10.663s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/packages/calixto-ros-bot
+[10.671s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/calixto-ros-bot
+[10.678s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/cmake/calixto-ros-botConfig.cmake
+[10.685s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/cmake/calixto-ros-botConfig-version.cmake
+[10.692s] -- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/package.xml
+[10.701s] Invoked command in '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/local/bin/cmake --install /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot

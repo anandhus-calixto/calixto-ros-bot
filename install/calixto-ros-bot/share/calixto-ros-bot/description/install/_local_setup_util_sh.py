@@ -1,0 +1,1 @@
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/description/install/_local_setup_util_sh.py

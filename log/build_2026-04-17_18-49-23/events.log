@@ -1,0 +1,228 @@
+[0.000000] (-) TimerEvent: {}
+[0.000353] (calixto-ros-bot) JobQueued: {'identifier': 'calixto-ros-bot', 'dependencies': OrderedDict()}
+[0.000438] (calixto-ros-bot) JobStarted: {'identifier': 'calixto-ros-bot'}
+[0.015083] (calixto-ros-bot) JobProgress: {'identifier': 'calixto-ros-bot', 'progress': 'cmake'}
+[0.015964] (calixto-ros-bot) Command: {'cmd': ['/usr/local/bin/cmake', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot'], 'cwd': '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('SESSION_MANAGER', 'local/calixto-HP-Notebook:@/tmp/.ICE-unix/2078,unix/calixto-HP-Notebook:/tmp/.ICE-unix/2078'), ('GZ_SIM_RESOURCE_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('QT_ACCESSIBILITY', '1'), ('COLORTERM', 'truecolor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_PYTHON_VERSION', '3'), ('LANGUAGE', 'en_IN:en'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XMODIFIERS', '@im=ibus'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PWD', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('LOGNAME', 'calixto'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_DOMAIN_ID', '0'), ('SYSTEMD_EXEC_PID', '2644'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JZN4N3'), ('HOME', '/home/calixto'), ('USERNAME', 'calixto'), ('IM_CONFIG_PHASE', '1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VTE_VERSION', '6800'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2d7212dd_d33e_4c99_b1ee_49c2c7a2621a'), ('COLCON_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install'), ('GNOME_SETUP_DISPLAY', ':1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'calixto'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('QT_IM_MODULE', 'ibus'), ('LD_LIBRARY_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ROS_LOCALHOST_ONLY', '0'), ('LC_ALL', 'en_US.UTF-8'), ('GAZEBO_MODEL_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PATH', '/opt/ros/humble/bin:/home/calixto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/calixto/.mcuxpressotools/cmake-3.30.0-linux-x86_64/bin'), ('GDMSESSION', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/media/drive_b/anandhu/ros2_ws_apr/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.098801] (-) TimerEvent: {}
+[0.118165] (calixto-ros-bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198942] (-) TimerEvent: {}
+[0.271783] (calixto-ros-bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.294289] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299105] (-) TimerEvent: {}
+[0.399597] (-) TimerEvent: {}
+[0.438863] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.488133] (calixto-ros-bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.489912] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.490789] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.499718] (-) TimerEvent: {}
+[0.520573] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600204] (-) TimerEvent: {}
+[0.702419] (-) TimerEvent: {}
+[0.733110] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.802544] (-) TimerEvent: {}
+[0.816964] (calixto-ros-bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.819913] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.821369] (calixto-ros-bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.839418] (calixto-ros-bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902682] (-) TimerEvent: {}
+[1.003019] (-) TimerEvent: {}
+[1.103418] (-) TimerEvent: {}
+[1.119764] (calixto-ros-bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[1.203526] (-) TimerEvent: {}
+[1.254187] (calixto-ros-bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.303660] (-) TimerEvent: {}
+[1.316636] (calixto-ros-bot) StdoutLine: {'line': b'-- Found hardware_interface: 2.53.1 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[1.403842] (-) TimerEvent: {}
+[1.410931] (calixto-ros-bot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.427542] (calixto-ros-bot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.452088] (calixto-ros-bot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.496038] (calixto-ros-bot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.503923] (-) TimerEvent: {}
+[1.542518] (calixto-ros-bot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.604073] (-) TimerEvent: {}
+[1.704429] (-) TimerEvent: {}
+[1.804763] (-) TimerEvent: {}
+[1.905116] (-) TimerEvent: {}
+[2.005481] (-) TimerEvent: {}
+[2.105899] (-) TimerEvent: {}
+[2.179114] (calixto-ros-bot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.185393] (calixto-ros-bot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.206056] (-) TimerEvent: {}
+[2.253047] (calixto-ros-bot) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.306172] (-) TimerEvent: {}
+[2.352652] (calixto-ros-bot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/local/lib/libcrypto.so (found version "1.1.1o")\n'}
+[2.361916] (calixto-ros-bot) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.406290] (-) TimerEvent: {}
+[2.409702] (calixto-ros-bot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[2.418855] (calixto-ros-bot) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.437073] (calixto-ros-bot) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.461924] (calixto-ros-bot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.480262] (calixto-ros-bot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.506417] (-) TimerEvent: {}
+[2.600885] (calixto-ros-bot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.604106] (calixto-ros-bot) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.606531] (-) TimerEvent: {}
+[2.706850] (-) TimerEvent: {}
+[2.807220] (-) TimerEvent: {}
+[2.907571] (-) TimerEvent: {}
+[2.922578] (calixto-ros-bot) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[2.955223] (calixto-ros-bot) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.960378] (calixto-ros-bot) StdoutLine: {'line': b'-- Build files have been written to: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot\n'}
+[2.980381] (calixto-ros-bot) CommandEnded: {'returncode': 0}
+[2.981290] (calixto-ros-bot) JobProgress: {'identifier': 'calixto-ros-bot', 'progress': 'build'}
+[2.983190] (calixto-ros-bot) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot', '--', '-j4', '-l4'], 'cwd': '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('SESSION_MANAGER', 'local/calixto-HP-Notebook:@/tmp/.ICE-unix/2078,unix/calixto-HP-Notebook:/tmp/.ICE-unix/2078'), ('GZ_SIM_RESOURCE_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('QT_ACCESSIBILITY', '1'), ('COLORTERM', 'truecolor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_PYTHON_VERSION', '3'), ('LANGUAGE', 'en_IN:en'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XMODIFIERS', '@im=ibus'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PWD', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('LOGNAME', 'calixto'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_DOMAIN_ID', '0'), ('SYSTEMD_EXEC_PID', '2644'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JZN4N3'), ('HOME', '/home/calixto'), ('USERNAME', 'calixto'), ('IM_CONFIG_PHASE', '1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VTE_VERSION', '6800'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2d7212dd_d33e_4c99_b1ee_49c2c7a2621a'), ('COLCON_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install'), ('GNOME_SETUP_DISPLAY', ':1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'calixto'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('QT_IM_MODULE', 'ibus'), ('LD_LIBRARY_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ROS_LOCALHOST_ONLY', '0'), ('LC_ALL', 'en_US.UTF-8'), ('GAZEBO_MODEL_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PATH', '/opt/ros/humble/bin:/home/calixto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/calixto/.mcuxpressotools/cmake-3.30.0-linux-x86_64/bin'), ('GDMSESSION', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/media/drive_b/anandhu/ros2_ws_apr/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[3.007720] (-) TimerEvent: {}
+[3.044369] (calixto-ros-bot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/calixto_hardware.dir/hardware/diffbot_system.cpp.o\x1b[0m\n'}
+[3.107837] (-) TimerEvent: {}
+[3.208123] (-) TimerEvent: {}
+[3.308540] (-) TimerEvent: {}
+[3.408908] (-) TimerEvent: {}
+[3.509277] (-) TimerEvent: {}
+[3.609657] (-) TimerEvent: {}
+[3.710112] (-) TimerEvent: {}
+[3.810653] (-) TimerEvent: {}
+[3.911045] (-) TimerEvent: {}
+[4.011402] (-) TimerEvent: {}
+[4.111767] (-) TimerEvent: {}
+[4.212136] (-) TimerEvent: {}
+[4.312499] (-) TimerEvent: {}
+[4.412858] (-) TimerEvent: {}
+[4.513268] (-) TimerEvent: {}
+[4.613681] (-) TimerEvent: {}
+[4.714106] (-) TimerEvent: {}
+[4.814512] (-) TimerEvent: {}
+[4.877104] (calixto-ros-bot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:1\x1b[m\x1b[K:\n'}
+[4.877476] (calixto-ros-bot) StderrLine: {'line': b'\x1b[01m\x1b[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/include/calixto-ros-bot/diffbot_system.hpp:42:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.877731] (calixto-ros-bot) StderrLine: {'line': b'   42 |   RCLCPP_SHARED_PTR_DEFINITIONS(DiffBotSystemHardware)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[4.877943] (calixto-ros-bot) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.878174] (calixto-ros-bot) StderrLine: {'line': b'      |                                                       \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[4.915144] (-) TimerEvent: {}
+[5.015587] (-) TimerEvent: {}
+[5.115970] (-) TimerEvent: {}
+[5.216319] (-) TimerEvent: {}
+[5.316720] (-) TimerEvent: {}
+[5.417113] (-) TimerEvent: {}
+[5.517515] (-) TimerEvent: {}
+[5.617914] (-) TimerEvent: {}
+[5.718327] (-) TimerEvent: {}
+[5.818731] (-) TimerEvent: {}
+[5.919115] (-) TimerEvent: {}
+[6.019526] (-) TimerEvent: {}
+[6.119933] (-) TimerEvent: {}
+[6.220355] (-) TimerEvent: {}
+[6.320762] (-) TimerEvent: {}
+[6.421175] (-) TimerEvent: {}
+[6.521585] (-) TimerEvent: {}
+[6.622286] (-) TimerEvent: {}
+[6.722938] (-) TimerEvent: {}
+[6.823290] (-) TimerEvent: {}
+[6.923656] (-) TimerEvent: {}
+[7.024055] (-) TimerEvent: {}
+[7.124417] (-) TimerEvent: {}
+[7.224841] (-) TimerEvent: {}
+[7.325187] (-) TimerEvent: {}
+[7.425547] (-) TimerEvent: {}
+[7.525903] (-) TimerEvent: {}
+[7.626253] (-) TimerEvent: {}
+[7.670933] (calixto-ros-bot) StderrLine: {'line': b'\x1b[01m\x1b[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type calixto_ros_bot::DiffBotSystemHardware::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.671301] (calixto-ros-bot) StderrLine: {'line': b'\x1b[01m\x1b[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:140:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kperiod\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.671525] (calixto-ros-bot) StderrLine: {'line': b'  140 | nst rclcpp::Time & /*time*/, \x1b[01;35m\x1b[Kconst rclcpp::Duration & period\x1b[m\x1b[K)\n'}
+[7.671722] (calixto-ros-bot) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[7.671909] (calixto-ros-bot) StderrLine: {'line': b'\n'}
+[7.726390] (-) TimerEvent: {}
+[7.826788] (-) TimerEvent: {}
+[7.927197] (-) TimerEvent: {}
+[8.027729] (-) TimerEvent: {}
+[8.128141] (-) TimerEvent: {}
+[8.228545] (-) TimerEvent: {}
+[8.329113] (-) TimerEvent: {}
+[8.429534] (-) TimerEvent: {}
+[8.529891] (-) TimerEvent: {}
+[8.630398] (-) TimerEvent: {}
+[8.730750] (-) TimerEvent: {}
+[8.831107] (-) TimerEvent: {}
+[8.931446] (-) TimerEvent: {}
+[9.031818] (-) TimerEvent: {}
+[9.132132] (-) TimerEvent: {}
+[9.232470] (-) TimerEvent: {}
+[9.332812] (-) TimerEvent: {}
+[9.433272] (-) TimerEvent: {}
+[9.533691] (-) TimerEvent: {}
+[9.634104] (-) TimerEvent: {}
+[9.734502] (-) TimerEvent: {}
+[9.834940] (-) TimerEvent: {}
+[9.935378] (-) TimerEvent: {}
+[9.950422] (calixto-ros-bot) StdoutLine: {'line': b'[100%] \x1b[1m\x1b[32mLinking CXX shared library libcalixto_hardware.so\x1b[0m\n'}
+[10.035495] (-) TimerEvent: {}
+[10.135923] (-) TimerEvent: {}
+[10.236320] (-) TimerEvent: {}
+[10.281423] (calixto-ros-bot) StdoutLine: {'line': b'[100%] Built target calixto_hardware\n'}
+[10.292371] (calixto-ros-bot) CommandEnded: {'returncode': 0}
+[10.293380] (calixto-ros-bot) JobProgress: {'identifier': 'calixto-ros-bot', 'progress': 'install'}
+[10.301580] (calixto-ros-bot) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot'], 'cwd': '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('SESSION_MANAGER', 'local/calixto-HP-Notebook:@/tmp/.ICE-unix/2078,unix/calixto-HP-Notebook:/tmp/.ICE-unix/2078'), ('GZ_SIM_RESOURCE_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('QT_ACCESSIBILITY', '1'), ('COLORTERM', 'truecolor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_PYTHON_VERSION', '3'), ('LANGUAGE', 'en_IN:en'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XMODIFIERS', '@im=ibus'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PWD', '/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('LOGNAME', 'calixto'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_DOMAIN_ID', '0'), ('SYSTEMD_EXEC_PID', '2644'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JZN4N3'), ('HOME', '/home/calixto'), ('USERNAME', 'calixto'), ('IM_CONFIG_PHASE', '1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VTE_VERSION', '6800'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demos:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2:/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_description:/media/drive_b/anandhu/ros2_ws_apr/install/my_bot:/opt/ros/humble'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2d7212dd_d33e_4c99_b1ee_49c2c7a2621a'), ('COLCON_PREFIX_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install'), ('GNOME_SETUP_DISPLAY', ':1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'calixto'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('QT_IM_MODULE', 'ibus'), ('LD_LIBRARY_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/ros2_control_demo_example_2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ROS_LOCALHOST_ONLY', '0'), ('LC_ALL', 'en_US.UTF-8'), ('GAZEBO_MODEL_PATH', '/media/drive_b/anandhu/ros2_ws_apr/install/my_bot/share/my_bot/..'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PATH', '/opt/ros/humble/bin:/home/calixto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/calixto/.mcuxpressotools/cmake-3.30.0-linux-x86_64/bin'), ('GDMSESSION', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/media/drive_b/anandhu/ros2_ws_apr/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[10.307777] (calixto-ros-bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.308815] (calixto-ros-bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.309426] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot//calixto-ros-bot.xml\n'}
+[10.316720] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/lib/calixto-ros-bot/libcalixto_hardware.so\n'}
+[10.323873] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/bridge_config.yaml\n'}
+[10.330586] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/diffbot_controllers.yaml\n'}
+[10.336450] (-) TimerEvent: {}
+[10.337232] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/config/empty.yaml\n'}
+[10.345263] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/build/.built_by\n'}
+[10.351978] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/build/COLCON_IGNORE\n'}
+[10.358577] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/diffbot.ros2_control.xacro\n'}
+[10.365606] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/gazebo_control.xacro\n'}
+[10.372606] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/inertial_macros.xacro\n'}
+[10.379448] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/.colcon_install_layout\n'}
+[10.386191] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/COLCON_IGNORE\n'}
+[10.392914] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/_local_setup_util_ps1.py\n'}
+[10.399632] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/_local_setup_util_sh.py\n'}
+[10.406394] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.bash\n'}
+[10.413040] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.ps1\n'}
+[10.419704] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.sh\n'}
+[10.426648] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/local_setup.zsh\n'}
+[10.433264] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.bash\n'}
+[10.436571] (-) TimerEvent: {}
+[10.440034] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.ps1\n'}
+[10.446745] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.sh\n'}
+[10.453507] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/install/setup.zsh\n'}
+[10.460326] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-battery-holder-yellow.stl\n'}
+[10.467436] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-comp-holder-darkblue.stl\n'}
+[10.474945] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-led-holder-black.stl\n'}
+[10.482300] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-motors-grey.stl\n'}
+[10.488895] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-stem-blue.stl\n'}
+[10.495615] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-switch-holder.stl\n'}
+[10.502273] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chasis-top-and-bottom-red.stl\n'}
+[10.509000] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-Chassis-URDF.stl\n'}
+[10.515738] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-LEFT-URDF.stl\n'}
+[10.522387] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/meshes/ROS2-RIGHT-URDF.stl\n'}
+[10.529922] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/robot.urdf.xacro\n'}
+[10.536468] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/robot_core.xacro\n'}
+[10.536689] (-) TimerEvent: {}
+[10.543276] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/rviz/diffbot.rviz\n'}
+[10.549785] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/description/rviz/diffbot_view.rviz\n'}
+[10.556790] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/diffbot.launch.py\n'}
+[10.563548] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/launch_sim.launch.py\n'}
+[10.570556] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/launch/rsp.launch.py\n'}
+[10.577892] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/worlds/empty.world\n'}
+[10.584675] (calixto-ros-bot) StdoutLine: {'line': b'-- Up-to-date symlink: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/calixto-ros-bot.xml\n'}
+[10.585050] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/package_run_dependencies/calixto-ros-bot\n'}
+[10.592107] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/parent_prefix_path/calixto-ros-bot\n'}
+[10.599298] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/ament_prefix_path.sh\n'}
+[10.607980] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/ament_prefix_path.dsv\n'}
+[10.614752] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/path.sh\n'}
+[10.621467] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/environment/path.dsv\n'}
+[10.629048] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.bash\n'}
+[10.635689] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.sh\n'}
+[10.636810] (-) TimerEvent: {}
+[10.642724] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.zsh\n'}
+[10.649954] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/local_setup.dsv\n'}
+[10.656757] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/package.dsv\n'}
+[10.663664] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/packages/calixto-ros-bot\n'}
+[10.670972] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/calixto-ros-bot\n'}
+[10.678486] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/cmake/calixto-ros-botConfig.cmake\n'}
+[10.685143] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/cmake/calixto-ros-botConfig-version.cmake\n'}
+[10.691815] (calixto-ros-bot) StdoutLine: {'line': b'-- Symlinking: /media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/install/calixto-ros-bot/share/calixto-ros-bot/package.xml\n'}
+[10.700764] (calixto-ros-bot) CommandEnded: {'returncode': 0}
+[10.730818] (calixto-ros-bot) JobEnded: {'identifier': 'calixto-ros-bot', 'rc': 0}
+[10.732250] (-) EventReactorShutdown: {}

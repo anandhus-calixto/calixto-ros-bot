@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/libcalixto_hardware.so" "TARGETS" "calixto_hardware" "DESTINATION" "lib/calixto-ros-bot")

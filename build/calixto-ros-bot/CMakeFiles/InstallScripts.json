@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

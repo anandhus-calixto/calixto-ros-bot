@@ -1,0 +1,10 @@
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/uninstall.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/calixto-ros-bot_uninstall.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/calixto_hardware.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/test.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/edit_cache.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/rebuild_cache.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/list_install_components.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/install.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/install/local.dir
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/CMakeFiles/install/strip.dir

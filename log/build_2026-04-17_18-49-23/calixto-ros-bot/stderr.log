@@ -1,0 +1,10 @@
+In file included from [01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:1[m[K:
+[01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/include/calixto-ros-bot/diffbot_system.hpp:42:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   42 |   RCLCPP_SHARED_PTR_DEFINITIONS(DiffBotSystemHardware)[01;35m[K;[m[K
+      |                                                       [01;35m[K^[m[K
+      |                                                       [31m[K-[m[K
+[01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type calixto_ros_bot::DiffBotSystemHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/hardware/diffbot_system.cpp:140:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  140 | nst rclcpp::Time & /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K)
+      |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+

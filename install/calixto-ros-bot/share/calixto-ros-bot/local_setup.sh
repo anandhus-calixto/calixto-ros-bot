@@ -1,0 +1,1 @@
+/media/drive_b/anandhu/ros2_ws_apr/src/calixto-ros-bot/build/calixto-ros-bot/ament_cmake_environment_hooks/local_setup.sh
