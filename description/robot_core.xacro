@@ -23,7 +23,7 @@
         <origin xyz="0 0 0.087" rpy="0 0 0"/>
     </joint>
 
-<link name="chassis">
+    <link name="chassis">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
@@ -237,5 +237,4 @@
     <material>Gazebo/Black</material>
 </gazebo>
 
-    
 </robot>
