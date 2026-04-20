@@ -67,8 +67,8 @@ def generate_launch_description():
         ]
     )
     rviz_config_file = PathJoinSubstitution(
-    	[FindPackageShare("calixto-ros-bot"), "description", "rviz", "diffbot", "diffbot.rviz"]
-	)
+    [FindPackageShare("calixto-ros-bot"), "description", "rviz", "rviz_config.rviz"]
+    )
 
     control_node = Node(
         package="controller_manager",
