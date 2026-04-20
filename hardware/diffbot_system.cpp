@@ -139,7 +139,7 @@ hardware_interface::CallbackReturn DiffBotSystemHardware::on_deactivate(
 hardware_interface::return_type DiffBotSystemHardware::read(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & period)
 {
-  /*
+  
 
   // for reading hardware
   if (!comms_.connected())
@@ -166,8 +166,8 @@ hardware_interface::return_type DiffBotSystemHardware::read(
   wheel_fr_.vel = (wheel_fr_.pos - prev_fr) / dt;
   wheel_rl_.vel = (wheel_rl_.pos - prev_rl) / dt;
   wheel_rr_.vel = (wheel_rr_.pos - prev_rr) / dt;
-  */
-
+  
+/*
   // fake hardware for tench bench purpose
   // No encoders connected — dummy feedback
   wheel_fl_.vel = 0.0;
@@ -180,6 +180,7 @@ hardware_interface::return_type DiffBotSystemHardware::read(
   wheel_fr_.pos = 0.0;
   wheel_rl_.pos = 0.0;
   wheel_rr_.pos = 0.0;
+  */
   return hardware_interface::return_type::OK;
 }
 

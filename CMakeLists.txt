@@ -6,27 +6,29 @@ if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
-# 1. Find dependencies
+# 1. Find standard ROS dependencies
 find_package(ament_cmake REQUIRED)
 find_package(hardware_interface REQUIRED)
-find_package(pluginlib REQUIRED) # This must be found for the command to work
+find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
+
+# --- NEW: Use PkgConfig to find libserial ---
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBSERIAL REQUIRED libserial)
 
 # 2. Build the hardware library
 add_library(calixto_hardware SHARED
   hardware/diffbot_system.cpp
 )
 
+# --- ADD the PkgConfig include directories ---
 target_include_directories(calixto_hardware PRIVATE
   hardware/include
+  ${LIBSERIAL_INCLUDE_DIRS}
 )
 
-# Use ament_target_dependencies to properly link everything
+# Use ament_target_dependencies for ROS packages
 ament_target_dependencies(calixto_hardware
   hardware_interface
   pluginlib
@@ -34,8 +36,12 @@ ament_target_dependencies(calixto_hardware
   rclcpp_lifecycle
 )
 
-# 3. Export the plugin (The command that was failing)
-# NOTE: This command name is case sensitive and requires pluginlib to be found
+# --- NEW: Link the libserial libraries specifically ---
+target_link_libraries(calixto_hardware
+  ${LIBSERIAL_LIBRARIES}
+)
+
+# 3. Export the plugin
 pluginlib_export_plugin_description_file(hardware_interface calixto-ros-bot.xml)
 
 # 4. Install
@@ -47,7 +53,6 @@ install(DIRECTORY config description launch worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
-# Install the export XML file so it can be found at runtime
 install(FILES calixto-ros-bot.xml
   DESTINATION share/${PROJECT_NAME}
 )
