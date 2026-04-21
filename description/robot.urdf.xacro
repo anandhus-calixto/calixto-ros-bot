@@ -5,6 +5,7 @@
     <xacro:arg name="use_gz_sim" default="false" /> 
 
     <xacro:include filename="robot_core.xacro" />
+    <xacro:include filename="robot_components.xacro" />
     <xacro:include filename="diffbot.ros2_control.xacro" />
 
     <xacro:diffbot_ros2_control

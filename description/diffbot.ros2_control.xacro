@@ -26,7 +26,7 @@
             <param name="baud_rate">115200</param>
             <param name="timeout_ms">30</param>
             <param name="loop_rate">20.0</param>
-            <param name="enc_counts_per_rev">1040</param>
+            <param name="enc_counts_per_rev">850</param>
           </xacro:unless>
         </xacro:unless>
       </hardware>
