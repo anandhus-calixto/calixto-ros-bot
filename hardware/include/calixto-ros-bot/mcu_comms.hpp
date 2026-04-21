@@ -51,30 +51,33 @@ public:
   }
 
 
-  std::string send_msg(const std::string &msg_to_send, bool print_output = false)
-  {
-    serial_conn_.FlushIOBuffers(); // Just in case
+// For encoder requests — expects a reply
+std::string send_msg(const std::string &msg_to_send, bool print_output = false)
+{
+    //serial_conn_.FlushIOBuffers();
     serial_conn_.Write(msg_to_send);
 
     std::string response = "";
     try
     {
-      // Responses end with \r\n so we will read up to (and including) the \n.
-      serial_conn_.ReadLine(response, '\n', timeout_ms_);
+        serial_conn_.ReadLine(response, '\n', timeout_ms_);
     }
     catch (const LibSerial::ReadTimeout&)
     {
-        std::cerr << "The ReadByte() call has timed out." << std::endl ;
+        std::cerr << "Encoder read timed out." << std::endl;
     }
-
 
     if (print_output)
-    {
-      std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
-    }
+        std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
 
     return response;
-  }
+}
+
+// For motor commands — firmware sends NO reply, don't ReadLine
+void send_cmd(const std::string &msg_to_send)
+{
+    serial_conn_.Write(msg_to_send);
+}
 
 
   void send_empty_msg()
@@ -100,8 +103,7 @@ void set_motor_values(double fl, double fr, double rl, double rr)
     std::stringstream ss;
     ss << std::fixed << std::setprecision(4);
     ss << fl << "," << fr << "," << rl << "," << rr << "\r";
-    // "3.1416,-3.1416,3.1416,-3.1416\r"
-    send_msg(ss.str());
+    send_cmd(ss.str());  // ← was send_msg(), which blocked for timeout_ms
 }
 
   void set_pid_values(int k_p, int k_d, int k_i, int k_o)
