@@ -49,7 +49,11 @@ install(TARGETS calixto_hardware
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY config description launch worlds
+install(DIRECTORY config description launch worlds maps rviz gazebo
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(FILES calixto-ros-bot.xml
   DESTINATION share/${PROJECT_NAME}
 )
 
