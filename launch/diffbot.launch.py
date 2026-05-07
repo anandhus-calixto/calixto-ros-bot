@@ -6,12 +6,10 @@ from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, 
 
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-# NEW IMPORT: This is the key to fixing the YAML parsing error
 from launch_ros.parameter_descriptions import ParameterValue
 
-
 def generate_launch_description():
-    # Declare arguments
+    # --- 1. Declare arguments ---
     declared_arguments = []
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -32,6 +30,7 @@ def generate_launch_description():
     gui = LaunchConfiguration("gui")
     use_mock_hardware = LaunchConfiguration("use_mock_hardware")
 
+    # --- 2. File Path Definitions ---
     # Get URDF via xacro
     robot_description_content = Command(
         [
@@ -46,26 +45,29 @@ def generate_launch_description():
         ]
     )
     
-    # FIXED: Wrapped in ParameterValue with value_type=str
     robot_description = {
         "robot_description": ParameterValue(robot_description_content, value_type=str)
     }
 
     robot_controllers = PathJoinSubstitution(
-        [
-            FindPackageShare("calixto-ros-bot"),
-            "config",
-            "diffbot_controllers.yaml",
-        ]
+        [FindPackageShare("calixto-ros-bot"), "config", "diffbot_controllers.yaml"]
     )
-    rviz_config_file = PathJoinSubstitution(
-    [FindPackageShare("calixto-ros-bot"), "description", "rviz", "rviz_config.rviz"]
+    
+    ekf_config_file = PathJoinSubstitution(
+        [FindPackageShare("calixto-ros-bot"), "config", "ekf.yaml"]
     )
 
+    rviz_config_file = PathJoinSubstitution(
+        [FindPackageShare("calixto-ros-bot"), "description", "rviz", "rviz_config.rviz"]
+    )
+
+    # --- 3. Node Definitions ---
+
+    # Main Controller Manager
     control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[robot_description, robot_controllers], # Added robot_description here too
+        parameters=[robot_description, robot_controllers],
         output="both",
         remappings=[
             ("~/robot_description", "/robot_description"),
@@ -73,13 +75,33 @@ def generate_launch_description():
         ],
     )
     
+    # Robot State Publisher
     robot_state_pub_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         output="both",
         parameters=[robot_description],
     )
+
+    # EKF Localization Node (Fuses Wheel Odom + BNO055 IMU)
+    robot_localization_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[ekf_config_file],
+    )
+
+    # IMU Hardware Driver (Optional: Remove if launched elsewhere)
+    # This assumes you are using a standard bno055 driver package
+    bno055_driver_node = Node(
+        package='bno055',
+        executable='bno055_node',
+        name='bno055_node',
+        parameters=[{'uart_port': '/dev/ttyUSB0', 'frame_id': 'imu_link'}] 
+    )
     
+    # RViz2
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
@@ -88,6 +110,8 @@ def generate_launch_description():
         arguments=["-d", rviz_config_file],
         condition=IfCondition(gui),
     )
+
+    # --- 4. Controller Spawners ---
 
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
@@ -100,6 +124,8 @@ def generate_launch_description():
         executable="spawner",
         arguments=["diffbot_base_controller", "--controller-manager", "/controller_manager"],
     )
+
+    # --- 5. Event Handlers (Delays) ---
 
     # Delay rviz start after `joint_state_broadcaster`
     delay_rviz_after_joint_state_broadcaster_spawner = RegisterEventHandler(
@@ -117,9 +143,13 @@ def generate_launch_description():
         )
     )
 
+    # --- 6. Launch Description Assembly ---
+
     nodes = [
         control_node,
         robot_state_pub_node,
+        robot_localization_node,
+        bno055_driver_node, # Added IMU driver
         joint_state_broadcaster_spawner,
         delay_rviz_after_joint_state_broadcaster_spawner,
         delay_robot_controller_spawner_after_joint_state_broadcaster_spawner,
