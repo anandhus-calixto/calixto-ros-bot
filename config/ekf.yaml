@@ -26,3 +26,4 @@ ekf_filter_node:
                   false, false, true,  # Fuse angular velocities
                   true,  false, false]
     imu0_relative: true
+    use_dynamic_process_noise_covariance: false
