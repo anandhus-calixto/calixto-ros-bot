@@ -22,7 +22,7 @@
             <param name="front_right_wheel_name">${prefix}front_right_wheel_joint</param>
             <param name="rear_left_wheel_name">${prefix}rear_left_wheel_joint</param>
             <param name="rear_right_wheel_name">${prefix}rear_right_wheel_joint</param>
-            <param name="device">/dev/ttyUSB0</param>
+            <param name="device">/dev/ttyLP2</param>
             <param name="baud_rate">115200</param>
             <param name="timeout_ms">30</param>
             <param name="loop_rate">20.0</param>

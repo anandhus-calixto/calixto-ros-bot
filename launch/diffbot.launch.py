@@ -94,12 +94,12 @@ def generate_launch_description():
 
     # IMU Hardware Driver (Optional: Remove if launched elsewhere)
     # This assumes you are using a standard bno055 driver package
-    bno055_driver_node = Node(
-        package='bno055',
-        executable='bno055_node',
-        name='bno055_node',
-        parameters=[{'uart_port': '/dev/ttyUSB0', 'frame_id': 'imu_link'}] 
-    )
+    #bno055_driver_node = Node(
+    #    package='bno055',
+    #    executable='bno055_node',
+    #    name='bno055_node',
+    #   parameters=[{'uart_port': '/dev/ttyUSB0', 'frame_id': 'imu_link'}] 
+    #)
     
     # RViz2
     rviz_node = Node(

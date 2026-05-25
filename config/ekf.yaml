@@ -1,8 +1,8 @@
 # calixto-ros-bot/config/ekf.yaml
 ekf_filter_node:
   ros__parameters:
-    frequency: 30.0
-    sensor_timeout: 0.1
+    frequency: 10.0
+    sensor_timeout: 0.5
     two_d_mode: true
     publish_tf: true
 
@@ -16,14 +16,13 @@ ekf_filter_node:
     odom0_config: [false, false, false, # x, y, z
                	   false, false, false, # roll, pitch, yaw
                    true,  false, false, # vx (Linear velocity)
-                   false, false, true,  # v_yaw (Angular velocity)
+                   false, false, false,  # v_yaw (Angular velocity)
                    false, false, false]
     # IMU Data
     imu0: /bno055/imu
-    imu0_config: [false, false, false,
-                  false, false, true,  # Fuse absolute orientation
-                  false, false, false,
-                  false, false, true,  # Fuse angular velocities
-                  true,  false, false]
-    imu0_relative: true
-    use_dynamic_process_noise_covariance: false
+    imu0_config: [false, false, false, # x, y, z
+                  false, false, true,  # roll, pitch, YAW (Absolute)
+                  false, false, false, # vx, vy, vz
+                  false, false, true,  # d_roll, d_pitch, d_YAW (Velocity)
+                  false, false, false] # ax, ay, az (Set to false until calibration is 3)
+    imu0_relative: false

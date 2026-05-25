@@ -9,10 +9,10 @@ slam_toolbox:
     ceres_dogleg_type: TRADITIONAL_DOGLEG
     ceres_loss_function: None
 
-    # ROS Parameters
-    odom_frame: odom
+    # ROS Parameters 
+    odom_frame: odom  #this is not topic naem.
     map_frame: map
-    base_frame: base_footprint
+    base_frame: base_link
     scan_topic: /scan
     use_map_saver: true
     mode: localization #localization #mapping 
@@ -20,7 +20,9 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/anandhu-sudha/ws_ros2/src/calixto-ros-bot/maps/my_map_sim_serial
+    #map_file_name: /home/anandhu-sudha/ws_ros2/lab_serial
+    #map_file_name: /home/anandhu-sudha/ws_ros2/src/calixto-ros-bot/maps/map_sim_new_serial
+    map_file_name: /home/anandhu-sudha/ws_ros2/my_map_sim_new
     # map_start_pose: [0.0, 0.0, 0.0]
     map_start_at_dock: true
 
