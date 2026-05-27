@@ -26,7 +26,7 @@ amcl:
     recovery_alpha_fast: 0.0
     recovery_alpha_slow: 0.0
     resample_interval: 1
-    robot_model_type: "nav2_amcl::OmniMotionModel"  #DifferentialMotionModel
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"  # OmniMotionModel
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
@@ -138,26 +138,26 @@ controller_server:
       angular_dist_threshold: 0.785          # engage shim above ~45 deg
       # angular_disengage_threshold: 1.2     # UNCOMMENT if on Nav2 Iron or later (adds hysteresis)
       forward_sampling_distance: 1.0         # was 0.5 — longer lookahead = stable heading target
-      rotate_to_heading_angular_vel: 1.0     # was 1.8 — less overshoot of threshold
-      max_angular_accel: 3.2
+      rotate_to_heading_angular_vel: 1.6     # was 1.8 — less overshoot of threshold
+      max_angular_accel: 1.5
       simulate_ahead_time: 1.0
 
       # ----- DWB primary controller -----
       debug_trajectory_details: True
       min_vel_x: 0.0
       min_vel_y: 0.0
-      max_vel_x: 0.24
+      max_vel_x: 0.15
       max_vel_y: 0.0
-      max_vel_theta: 2.93
+      max_vel_theta: 1.75
       min_speed_xy: 0.0
-      max_speed_xy: 0.24
+      max_speed_xy: 0.15
       min_speed_theta: 0.001                 # was 0.4 — that value broke stopped-detection
-      acc_lim_x: 2.5
+      acc_lim_x: 1.0
       acc_lim_y: 0.0
-      acc_lim_theta: 3.2
-      decel_lim_x: -2.5
+      acc_lim_theta: 1.5
+      decel_lim_x: -1.0
       decel_lim_y: 0.0
-      decel_lim_theta: -3.2
+      decel_lim_theta: -1.5
       vx_samples: 20
       vy_samples: 5
       vtheta_samples: 20
@@ -166,7 +166,7 @@ controller_server:
       angular_granularity: 0.025
       transform_tolerance: 1.0
       xy_goal_tolerance: 0.25
-      trans_stopped_velocity: 0.1
+      trans_stopped_velocity: 0.05
       short_circuit_trajectory_evaluation: True
       stateful: True
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
@@ -198,7 +198,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 1.0
-        inflation_radius: 0.8              # was 0.5 — aligned with global for consistency
+        inflation_radius: 0.2              # was 0.5 — aligned with global for consistency
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -256,7 +256,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 1.0
-        inflation_radius: 0.8               # was 0.2 — must be >= inscribed radius (0.225)
+        inflation_radius: 0.2               # was 0.2 — must be >= inscribed radius (0.225)
       always_send_full_costmap: True
 
 map_server:
@@ -272,32 +272,32 @@ map_saver:
     occupied_thresh_default: 0.65
     map_subscribe_transient_local: True
 
+#planner_server:
+#  ros__parameters:
+#    expected_planner_frequency: 5.0         # was 20.0 — slower replans = stable lookahead
+#    use_sim_time: True
+#    planner_plugins: ["GridBased"]
+#    GridBased:
+#      plugin: "nav2_navfn_planner/NavfnPlanner"
+#      tolerance: 0.5
+#      use_astar: false
+#      allow_unknown: true
+      
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 5.0         # was 20.0 — slower replans = stable lookahead
+    expected_planner_frequency: 20.0
     use_sim_time: True
     planner_plugins: ["GridBased"]
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5
-      use_astar: false
-      allow_unknown: true
-      
-#planner_server:
-#  ros__parameters:
-#    expected_planner_frequency: 20.0
-#    use_sim_time: True
-#   planner_plugins: ["GridBased"]
-#    GridBased:
-#      plugin: "nav2_smac_planner/SmacPlanner2D" # Changed from Navfn
-#      tolerance: 0.5                      # Tolerance to goal
-#      allow_unknown: true                 # Allow planning through unknown space
-#      use_final_approach_orientation: true # Robot will arrive at goal orientation
-#      max_iterations: 1000000             # Max search steps
-#      max_on_approach_iterations: 1000    # Refinement steps near goal
-#      minimum_turning_radius: 0.0         # Set to 0.0 for differential/omni robots
-#      lookup_table_size: 20.0             # Size of the cost lookup table
-#      cost_travel_multiplier: 2.0         # Penalty for moving through higher costs     
+      plugin: "nav2_smac_planner/SmacPlanner2D" # Changed from Navfn
+      tolerance: 0.5                      # Tolerance to goal
+      allow_unknown: true                 # Allow planning through unknown space
+      use_final_approach_orientation: true # Robot will arrive at goal orientation
+      max_iterations: 1000000             # Max search steps
+      max_on_approach_iterations: 1000    # Refinement steps near goal
+      minimum_turning_radius: 0.0         # Set to 0.0 for differential/omni robots
+      lookup_table_size: 20.0             # Size of the cost lookup table
+      cost_travel_multiplier: 2.0         # Penalty for moving through higher costs     
       
 
 smoother_server:
@@ -357,10 +357,10 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.24, 0.0, 2.93]
-    min_velocity: [-0.24, 0.0, -2.93]
-    max_accel: [2.5, 0.0, 3.2]
-    max_decel: [-2.5, 0.0, -3.2]
+    max_velocity: [0.20, 0.0, 2.08]
+    min_velocity: [-0.15, 0.0, -2.08]
+    max_accel: [1.0, 0.0, 1.5]
+    max_decel: [-1.0, 0.0, -1.5]
     odom_topic: "/odometry/filtered"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]

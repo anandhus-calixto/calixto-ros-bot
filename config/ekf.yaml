@@ -26,3 +26,26 @@ ekf_filter_node:
                   false, false, true,  # d_roll, d_pitch, d_YAW (Velocity)
                   false, false, false] # ax, ay, az (Set to false until calibration is 3)
     imu0_relative: false
+    
+# try this example for the imu fusing for the x motion also to prevent the wheel slip (try it and find the difference next time).    
+#ekf_node:
+#  ros__parameters:
+#    frequency: 50.0
+#    sensor_timeout: 0.1
+#    two_d_mode: true
+#
+#    odom0: /wheel/odometry
+#    odom0_config: [false, false, false,
+#                   false, false, false,
+#                   true,  false, false,   # vx
+#                   false, false, true,    # vyaw
+#                   false, false, false]
+#
+#    imu0: /imu/data
+#    imu0_config: [false, false, false,
+#                  false, false, false,
+#                  false, false, false,
+#                  false, false, true,    # gyro Z → yaw rate
+#                  true,  false, false]   # accel X → forward
+#    imu0_remove_gravitational_acceleration: true
+#    imu0_differential: false    
